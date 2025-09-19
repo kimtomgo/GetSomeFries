@@ -5,6 +5,8 @@
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
 #!category=🍟 Fries
 
+#如要使用，务必将https://dns.volcdns.pub/dns-query替换为180.184.1.1
+
 [General]
 
 [Host]
@@ -46,22 +48,19 @@ alt5-mtalk.google.com = 3.3.3.3
 alt6-mtalk.google.com = 3.3.3.3
 alt7-mtalk.google.com = 74.125.200.188
 alt8-mtalk.google.com = 3.3.3.3
-# Google CDN
-# dl.google.com = 180.163.151.161
-# dl.l.google.com = 180.163.151.161
 
 # --- CUSTOM DNS ---
 # > Modify Contents
 # Google CDN
-blog.google = server:119.29.29.29
-googletraveladservices.com = server:119.29.29.29
-dl.google.com = server:119.29.29.29
-dl.l.google.com = server:119.29.29.29
-clientservices.googleapis.com = server:119.29.29.29
-update.googleapis.com = server:119.29.29.29
-translate.googleapis.com = server:119.29.29.29
-fonts.googleapis.com = server:119.29.29.29
-fonts.gstatic.com = server:119.29.29.29
+blog.google = server:https://doh.pub/dns-query
+googletraveladservices.com = server:https://doh.pub/dns-query
+dl.google.com = server:https://doh.pub/dns-query
+dl.l.google.com = server:https://doh.pub/dns-query
+clientservices.googleapis.com = server:https://doh.pub/dns-query
+update.googleapis.com = server:https://doh.pub/dns-query
+translate.googleapis.com = server:https://doh.pub/dns-query
+fonts.googleapis.com = server:https://doh.pub/dns-query
+fonts.gstatic.com = server:https://doh.pub/dns-query
 # Google STUN
 stun.l.google.com = server:system
 stun?.l.google.com = server:system
@@ -398,82 +397,73 @@ urlqh.cn = server:https://doh.360.cn/dns-query
 
 # > Bytedance
 # refer: https://www.volcengine.com/docs/6758/179060
-# 艾特迷
-*.amemv.com = server:180.184.1.1
-# 西瓜 图片服务
-*.bdxiguaimg.com = server:180.184.1.1
-# 西瓜 静态资源
-*.bdxiguastatic.com = server:180.184.1.1
-# 字节跳动 UNPKG
-*.byted-static.com = server:180.184.1.1
-# 字节跳动
-*.bytedance.* = server:180.184.1.1
-# 字节跳动 DNS
-*.bytedns.net = server:180.184.1.1
-# 字节跳动 CDN 文件存储
-*.bytednsdoc.com = server:180.184.1.1
-# 字节跳动 Goofy
-*.bytegoofy.com = server:180.184.1.1
-# 字节跳动 图片服务
-*.byteimg.com = server:180.184.1.1
-# 字节跳动 SCM
-*.bytescm.com = server:180.184.1.1
-# 字节跳动 TOS
-*.bytetos.com = server:180.184.1.1
-# 飞书企业服务平台
-*.bytexservice.com = server:180.184.1.1
-# 抖音
-*.douyin.com = server:180.184.1.1
-# 抖音 静态资源
-*.douyinpic.com = server:180.184.1.1
-# 抖音 静态资源
-*.douyinstatic.com = server:180.184.1.1
-# 抖音 静态资源
-*.douyinvod.com = server:180.184.1.1
-# FeelGood平台
-*.feelgood.cn = server:180.184.1.1
-# 飞聊官网
-*.feiliao.com = server:180.184.1.1
-# 快手
-*.gifshow.com = server:180.184.1.1
-# 火山网
-*.huoshan.com = server:180.184.1.1
-# 火山直播
-*.huoshanzhibo.com = server:180.184.1.1
-# 抖音 dapm
-*.ibytedapm.com = server:180.184.1.1
-# 抖音 CDN
-*.iesdouyin.com = server:180.184.1.1
-# 西瓜视频
-*.ixigua.com = server:180.184.1.1
-# 快手
-*.kspkg.com = server:180.184.1.1
-# 抖音 静态资源
-*.pstatp.com = server:180.184.1.1
-# 今日头条
-*.snssdk.com = server:180.184.1.1
-# 今日头条
-*.toutiao.com = server:180.184.1.1
-# 今日头条
-*.toutiao13.com = server:180.184.1.1
-# 今日头条 静态资源
-*.toutiao???.??? = server:180.184.1.1
-# 头条云
-*.toutiaocloud.cn = server:180.184.1.1
-# 头条云
-*.toutiaocloud.com = server:180.184.1.1
-# 今日头条 建站
-*.toutiaopage.com = server:180.184.1.1
-# 悟空
-*.wukong.com = server:180.184.1.1
-# 字节跳动 API
-*.zijieapi.com = server:180.184.1.1
-# 字节跳动 图片服务
-*.zijieimg.com = server:180.184.1.1
-# 今日头条 网页版
-*.zjbyte.com = server:180.184.1.1
-# 字节跳动 CDN
-*.zjcdn.com = server:180.184.1.1
+# refer: https://ruleset.skk.moe/Modules/Rules/sukka_local_dns_mapping/bytedance.conf
+# https://dns.volcdns.pub/dns-query替换为180.184.1.1
+*.feishu.net = server:https://dns.volcdns.pub/dns-query
+*.toutiaostatic.com = server:https://dns.volcdns.pub/dns-query
+*.huoshanstatic.com = server:https://dns.volcdns.pub/dns-query
+*.byteeffecttos.com = server:https://dns.volcdns.pub/dns-query
+*.toutiaocloud.com = server:https://dns.volcdns.pub/dns-query
+*.huoshanzhibo.com = server:https://dns.volcdns.pub/dns-query
+*.douyinstatic.com = server:https://dns.volcdns.pub/dns-query
+*.douyinliving.com = server:https://dns.volcdns.pub/dns-query
+*.byted-static.com = server:https://dns.volcdns.pub/dns-query
+*.toutiaopage.com = server:https://dns.volcdns.pub/dns-query
+*.oceanengine.com = server:https://dns.volcdns.pub/dns-query
+*.ixiguavideo.com = server:https://dns.volcdns.pub/dns-query
+*.byteacctimg.com = server:https://dns.volcdns.pub/dns-query
+*.xiaoxiaapi.com = server:https://dns.volcdns.pub/dns-query
+*.volcengine.com = server:https://dns.volcdns.pub/dns-query
+*.toutiaovod.com = server:https://dns.volcdns.pub/dns-query
+*.toutiaoimg.com = server:https://dns.volcdns.pub/dns-query
+*.edge-byted.com = server:https://dns.volcdns.pub/dns-query
+*.dcarstatic.com = server:https://dns.volcdns.pub/dns-query
+*.bytednsdoc.com = server:https://dns.volcdns.pub/dns-query
+*.volcvideo.com = server:https://dns.volcdns.pub/dns-query
+*.ppxstatic.com = server:https://dns.volcdns.pub/dns-query
+*.iesdouyin.com = server:https://dns.volcdns.pub/dns-query
+*.ibytedapm.com = server:https://dns.volcdns.pub/dns-query
+*.feishupkg.com = server:https://dns.volcdns.pub/dns-query
+*.feishucdn.com = server:https://dns.volcdns.pub/dns-query
+*.douyinvod.com = server:https://dns.volcdns.pub/dns-query
+*.douyinpic.com = server:https://dns.volcdns.pub/dns-query
+*.douyincdn.com = server:https://dns.volcdns.pub/dns-query
+*.dongchedi.com = server:https://dns.volcdns.pub/dns-query
+*.bytegoofy.com = server:https://dns.volcdns.pub/dns-query
+*.bytedance.com = server:https://dns.volcdns.pub/dns-query
+*.bytecdntp.com = server:https://dns.volcdns.pub/dns-query
+*.zijieapi.com = server:https://dns.volcdns.pub/dns-query
+*.ixgvideo.com = server:https://dns.volcdns.pub/dns-query
+*.dcarlive.com = server:https://dns.volcdns.pub/dns-query
+*.volccdn.com = server:https://dns.volcdns.pub/dns-query
+*.toutiao.com = server:https://dns.volcdns.pub/dns-query
+*.huoshan.com = server:https://dns.volcdns.pub/dns-query
+*.feiliao.com = server:https://dns.volcdns.pub/dns-query
+*.dcarvod.com = server:https://dns.volcdns.pub/dns-query
+*.dcarimg.com = server:https://dns.volcdns.pub/dns-query
+*.dcarapi.com = server:https://dns.volcdns.pub/dns-query
+*.bytetcc.com = server:https://dns.volcdns.pub/dns-query
+*.byteimg.com = server:https://dns.volcdns.pub/dns-query
+*.wukong.com = server:https://dns.volcdns.pub/dns-query
+*.volces.com = server:https://dns.volcdns.pub/dns-query
+*.snssdk.com = server:https://dns.volcdns.pub/dns-query
+*.pstatp.com = server:https://dns.volcdns.pub/dns-query
+*.ppxvod.com = server:https://dns.volcdns.pub/dns-query
+*.ppximg.com = server:https://dns.volcdns.pub/dns-query
+*.ixigua.com = server:https://dns.volcdns.pub/dns-query
+*.douyin.com = server:https://dns.volcdns.pub/dns-query
+*.doubao.com = server:https://dns.volcdns.pub/dns-query
+*.zjcdn.com = server:https://dns.volcdns.pub/dns-query
+*.pipix.com = server:https://dns.volcdns.pub/dns-query
+*.baike.com = server:https://dns.volcdns.pub/dns-query
+*.okr.com = server:https://dns.volcdns.pub/dns-query
+*.toutiaoimg.cn = server:https://dns.volcdns.pub/dns-query
+*.feelgood.cn = server:https://dns.volcdns.pub/dns-query
+*.rsproxy.cn = server:https://dns.volcdns.pub/dns-query
+*.bytecdn.cn = server:https://dns.volcdns.pub/dns-query
+*.feishu.cn = server:https://dns.volcdns.pub/dns-query
+*.zjurl.cn = server:https://dns.volcdns.pub/dns-query
+*.coze.cn = server:https://dns.volcdns.pub/dns-query
 
 # > BiliBili
 # BiliBili upos视频服务器（阿里云）

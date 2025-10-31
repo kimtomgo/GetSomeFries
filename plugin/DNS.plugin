@@ -324,41 +324,41 @@ tb.cn = server:https://dns.alidns.com/dns-query
 # 腾讯短网址
 url.cn = server:https://doh.pub/dns-query
 
-# > 百度
+# > 百度 因不好用屏蔽百度dns
 # refer: https://dudns.baidu.com/support/localdns/Address/index.html
-*.baidu = server:180.76.76.76
-*.baidu.com = server:180.76.76.76
-# 百度 静态资源
-*.bdimg.com = server:180.76.76.76
-*.bdstatic.com = server:180.76.76.76
-# 百度网盘
-*.baidupcs.* = server:180.76.76.76
-# 百度云CDN
-*.baiduyuncdn.* = server:180.76.76.76
-# 百度云DNS
-*.baiduyundns.* = server:180.76.76.76
-# 百度云 DNS
-*.bdydns.* = server:180.76.76.76
-# 百度云 CDN
-*.bdycdn.* = server:180.76.76.76
-# 百度云 域名
-*.bdysite.com = server:180.76.76.76
-*.bdysites.com = server:180.76.76.76
-# 百度智能云
-*.baidubce.* = server:180.76.76.76
-# 百度智能云 DNS
-*.bcedns.* = server:180.76.76.76
-# 百度智能云 对象存储BOS
-*.bcebos.com = server:180.76.76.76
-# 百度智能云 播放器服务
-*.bcevod.com = server:180.76.76.76
-# 百度智能云 图片服务
-*.bceimg.com = server:180.76.76.76
-# 百度智能云 主机
-*.bcehost.com = server:180.76.76.76
-*.bcehosts.com = server:180.76.76.76
-# 百度短网址
-dwz.cn = server:180.76.76.76
+#*.baidu = server:180.76.76.76
+#*.baidu.com = server:180.76.76.76
+## 百度 静态资源
+#*.bdimg.com = server:180.76.76.76
+#*.bdstatic.com = server:180.76.76.76
+## 百度网盘
+#*.baidupcs.* = server:180.76.76.76
+## 百度云CDN
+#*.baiduyuncdn.* = server:180.76.76.76
+## 百度云DNS
+#*.baiduyundns.* = server:180.76.76.76
+## 百度云 DNS
+#*.bdydns.* = server:180.76.76.76
+## 百度云 CDN
+#*.bdycdn.* = server:180.76.76.76
+## 百度云 域名
+#*.bdysite.com = server:180.76.76.76
+#*.bdysites.com = server:180.76.76.76
+## 百度智能云
+#*.baidubce.* = server:180.76.76.76
+## 百度智能云 DNS
+#*.bcedns.* = server:180.76.76.76
+## 百度智能云 对象存储BOS
+#*.bcebos.com = server:180.76.76.76
+## 百度智能云 播放器服务
+#*.bcevod.com = server:180.76.76.76
+## 百度智能云 图片服务
+#*.bceimg.com = server:180.76.76.76
+## 百度智能云 主机
+#*.bcehost.com = server:180.76.76.76
+#*.bcehosts.com = server:180.76.76.76
+## 百度短网址
+#dwz.cn = server:180.76.76.76
 
 # > 360
 # refer: https://sdns.360.net/dnsPublic.html#course
